@@ -1,22 +1,23 @@
 import numpy as np
 
+
 class Perceptron(object):
     """
-    w_ wagi po dopasowaniu
-    errors_ liczba niepoprawnych klasyfikacji w epoce
+    w_          weight afrer fitting
+    errors_     era wrong classification
     """
     def __init__(self, eta=0.01, n_iter=10):
         """
-        :param eta:wsp. uczenia 0.0 - 1.0
-        :param n_iter:liczba iteracji po danych uczacych
+        :param eta:     learning factor 0.0 - 1.0
+        :param n_iter:  learn iterations
         """
         self.eta = eta
         self.n_iter = n_iter
 
     def fit(self, X, y):
         """
-        :param X: [n_próbek, n_cech] wektory uczace
-        :param y: [n_próbek] wartości docelowe
+        :param X: [n_samples, n_feature] learning vectors
+        :param y: [n_namples] target values
         :return: self
         """
         self.w_ = np.zeros(1 + X.shape[1])
