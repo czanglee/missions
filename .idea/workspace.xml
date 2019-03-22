@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ee4d051-0e05-443b-9a99-8771e2f3870d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/bpuchalski.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml/!libs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/missions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/missions.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml/perceptrion-test.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/perceptrion-test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml/perceptron.py" beforeDir="false" afterPath="$PROJECT_DIR$/ml/perceptron.py" afterDir="false" />
-    </list>
+    <list default="true" id="0ee4d051-0e05-443b-9a99-8771e2f3870d" name="Default" comment="thinking...." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,11 +245,18 @@
       <option name="presentableId" value="Default" />
       <updated>1507913730905</updated>
     </task>
+    <task id="LOCAL-00001" summary="thinking....">
+      <created>1553258961956</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553258961956</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="706" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0882353" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -279,6 +276,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="thinking...." />
+    <option name="LAST_COMMIT_MESSAGE" value="thinking...." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
