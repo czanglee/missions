@@ -1,23 +1,33 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from perceptron import Perceptron
 
-df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None)
+# plote Parcell length and Flake length
+plote_values_1 = False
+
+print("get CSV data of flowers\n")
 df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None)
 df.tail()
 
-import matplotlib.pyplot as plt
-import numpy as np
-
 y = df.iloc[0:100, 4].values
+print("First %s values (column 5):\n" % (y.size,))
+print(y)
 y = np.where(y == 'Iris-setosa', -1, 1)
+print("Iris-setosa values map true/false:\n")
+print(y)
 X = df.iloc[0:100, [0, 2]].values
-plt.scatter(X[:50, 0], X[:50, 1], color='red', marker='o', label='Setosa')
-plt.scatter(X[50:100, 0], X[50:100, 1], color='blue', marker='x', label='Versicolor')
-plt.xlabel('Długość działki [cm]')
-plt.ylabel('Długość płatka [cm]')
-plt.legend(loc='upper left')
-plt.show()
-
-from perceptron import Perceptron
+print("First %s values (Parcell length,Flake length)\n"% (X.size / 2,))
+print(X)
+if plote_values_1:
+    # plote first 50 values - iris-setosa
+    plt.scatter(X[:50, 0], X[:50, 1], color='red', marker='o', label='Setosa')
+    # plote 50 to 100 values - iris-versicolor
+    plt.scatter(X[50:100, 0], X[50:100, 1], color='blue', marker='x', label='Versicolor')
+    plt.xlabel('Parcell length [cm]')
+    plt.ylabel('Flake length [cm]')
+    plt.legend(loc='upper left')
+    plt.show()
 
 ppn = Perceptron(eta=0.1, n_iter=10)
 ppn.fit(X, y)
